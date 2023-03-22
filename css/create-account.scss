@@ -1,0 +1,297 @@
+@import 'variables';
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    background-color: $background-color;
+    width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 50px;
+    }
+
+    .nav-menu {
+        width: 607px;
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        font-weight: 600;
+        font-family: $main-font;
+        font-size: 16px;
+        line-height: 22px;
+
+        .nav-link {
+            text-decoration: none;
+            color: $text-color;
+        }
+
+        button {
+            background-color: $button-color;
+            border: $button-color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 152px;
+            height: 60px;
+            border-radius: 20px;
+            gap: 12px;
+            color: $text-color;
+            font-weight: 600;
+            font-family: $main-font;
+            font-size: 16px;
+            line-height: 22px;
+
+        }
+    }
+
+}
+
+.create-account-section {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+
+    .create-account-form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 100px 0px;
+        gap: 40px;
+    }
+
+    .headline-subhead {
+        display: flex;
+        flex-direction: column;
+        font-family: $main-font;
+        color: $text-color;
+
+        h2 {
+            font-weight: 600;
+            font-size: 51px;
+            line-height: 56px;
+        }
+
+        .subhead {
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 35px;
+        }
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        color: $background-color;
+
+        .typeforms {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .typeform {
+            width: 330px;
+            height: 46px;
+            background-color: white;
+            border: 1px solid #858584;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 16px 20px;
+            gap: 12px;
+            font-family: $main-font;
+            font-size: 16px;
+            line-height: 22px;
+        }
+        
+        button {
+            width: 330px;
+            height: 46px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 0px 50px;
+            gap: 12px;
+            background: $button-color;
+            border: solid $button-color;
+            border-radius: 20px;
+            color: $text-color;
+            font-family: $main-font;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: $secondary-background-color;
+    padding: 40px 115px;
+    gap: 31px;
+
+    .footer-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .NFT-marketplace-info {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        color: #CCCCCC;
+    }
+
+    .additional-info {
+        width: 238px;
+        font-family: $main-font;
+        font-size: 16px;
+        line-height: 22px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .community-info {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            .icons {
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+
+                button {
+                    background-color: transparent;
+                    border: none;
+                }
+            }
+        }
+    }
+
+    .explore {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        h5 {
+            font-family: $secondary-font;
+            font-size: 22px;
+            line-height: 35px;
+            color: $text-color;
+        }
+
+        .pages {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #CCCCCC;
+        }
+    }
+
+    .subscribe {
+        width: 420px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        h5 {
+            font-family: $secondary-font;
+            font-size: 22px;
+            line-height: 35px;
+            color: $text-color;
+        }
+
+        .subscribe-form-info {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            color: #CCCCCC;
+        }
+
+        .info {
+            padding-right: 150px;
+        }
+
+        .subscribe-form {
+            display: flex;
+            flex-direction: row;
+            gap: 0px;
+            height: 60px;
+            border-radius: 20px;
+            background-color: white;
+        }
+
+        .email {
+            width: 241px;
+            font-family: $main-font;
+            font-size: 16px;
+            line-height: 22px;
+            display: flex;
+            align-items: center;
+            color: $background-color;
+            padding-left: 20px;
+            padding-right: 12px;
+        }
+
+        button {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 0px 50px;
+            width: 179px;
+            font-family: $main-font;
+            font-size: 16px;
+            line-height: 22px;
+            background: $button-color;
+            border-radius: 20px;
+            border: $button-color;
+            color: $text-color;
+        }
+    }
+}
+
+.frame {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .divider {
+        border: 1px solid #858584;
+    }
+
+    .end {
+        font-family: $main-font;
+        font-size: 12px;
+        line-height: 13px;
+        color: #CCCCCC;
+    }
+}
