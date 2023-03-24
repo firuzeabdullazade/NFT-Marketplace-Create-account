@@ -100,7 +100,6 @@ header {
         display: flex;
         flex-direction: column;
         gap: 30px;
-        color: $background-color;
 
         .typeforms {
             display: flex;
@@ -119,9 +118,14 @@ header {
             align-items: center;
             padding: 16px 20px;
             gap: 12px;
+        }
+
+        input {
+            border: none;
             font-family: $main-font;
             font-size: 16px;
             line-height: 22px;
+            color: $background-color;
         }
         
         button {
